@@ -13,7 +13,7 @@ from basicsr.utils.registry import DATASET_REGISTRY
 
 @DATASET_REGISTRY.register()
 class ImageNetPairedDataset(data.Dataset):
-    
+
     def __init__(self, opt):
         super(ImageNetPairedDataset, self).__init__()
         self.opt = opt
